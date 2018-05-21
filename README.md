@@ -38,7 +38,7 @@ Le but de ce problème est d'écrire une fonction `fight` qui retourne le nom du
 * `health` et `damagePerAttack` sont des entiers positifs
 
 ```C++
-class Fighter
+class Player
 {
 private:
     std::string name;
@@ -48,14 +48,14 @@ private:
     int damagePerAttack;
 
 public:
-    Fighter(std::string name, int health, int damagePerAttack)
+    Player(std::string name, int health, int damagePerAttack)
     {
         this->name = name;
         this->health = health;
         this->damagePerAttack = damagePerAttack;
     }
 
-    ~Fighter() { };
+    ~Player() { };
 
     std::string getName()
     {

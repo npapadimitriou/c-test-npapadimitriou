@@ -7,8 +7,14 @@ std::vector<int> squaresInRect (int a, int b);
 int main(){
 
 	int a,b;
-	a=2;
-	b=4;
+	//a=2;
+	//b=4;
+	
+	std::cout<<"Give rectangle's first edge"<<std::endl;
+	std::cin >> a;
+	std::cout<<"Give rectangle's second edge"<<std::endl;
+	std::cin >> b;
+	
 	std::vector<int> result;
 
 	result=squaresInRect(a,b);

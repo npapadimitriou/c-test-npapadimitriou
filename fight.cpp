@@ -8,19 +8,33 @@ int fight(Player *player1,Player *player2);
 
 int main(){
 	int flag;
-	Player *player1=new Player("nikos",10,5);
-	Player *player2=new Player("jules",10,2);
+	
+	
 
 	//Player player1= Player("nikos",10,2);
 	//player2.Player("jules",10,1);
+	
+	int a, b;
+	int c,d;
+	std::cout<<"Give health  and damage of player1"<<std::endl;
+	std::cin >> a;
+	std::cin >> b;
+	Player *player1=new Player("player1",a,b);
+	
+	std::cout<<"Give health  and damage of player2"<<std::endl;
+	std::cin >> c;
+	std::cin >> d;
+	Player *player2=new Player("player2",c,d);
+	
+	
 	flag=fight(player1,player2);
 
 
 	if (flag==0){
-		std::cout<<player1->name<<std::endl;
+		std::cout<<player1->name <<" wins"<<std::endl;
 	}
 	else{
-		std::cout<<player2->name<<std::endl;
+		std::cout<<player2->name <<" wins"<<std::endl;
 
 	}
 return 0;
